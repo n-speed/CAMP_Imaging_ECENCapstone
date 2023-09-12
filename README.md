@@ -4,3 +4,5 @@ Modeling of vegetative indices to predict feature development during a growing s
 - SQL/MongoDB Database and GUI Management - Seth Royder
 - Image Pre-Processing and Splicing - Hannah Smith
 - LSTM Model(s) Training - Nathaniel Speed
+
+Test Edit From CLI
