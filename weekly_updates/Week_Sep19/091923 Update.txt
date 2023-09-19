@@ -1,0 +1,38 @@
+2:44 PM 9/19/2023
+Seth Royder
+- I have downloaded MangoDB and began the process of learning the software.
+- My plan for the next week is to continue learning the software and begin setting up a website.
+- I also plan on the end goal for the next couple of weeks is to have basic system where the website and datbase can communicate to each other.
+
+
+
+
+
+2:24 PM 9/19/2023
+Hannah Smith
+
+Problems:
+9/12/23: Learned that project goal and methods will likely chang significantly on
+		-Potentially alters my subsystem to be 2 systems, both drone and image processing, or just drone
+		-Waiting for sponsors to hold meetings necessary to make project decisions and provide final goals
+
+Progress: Week of 9/10/23 - 9/16/23
+	Completed Conops Report
+	Began background research into existing methods of using machine learning on crop images to detect characteristics in crops that aren't vegetation indices (the potential new project parameters)
+		-Ex) weed detection, disease detection, crop identification
+
+Future Milestones: Week of 9/17/23 - 9/23/23
+	Push to receive project paramter decisions in the form of emails and in-person meetings
+	Build intro presentation skeleton
+	Investigate and familiarize myself with breifly mentioned potential image processing pipeline (AgiSoft)
+
+
+
+
+
+2:45 PM 9/19/2023
+Nathaniel Speed
+- Taking a look at LSTM variations for developing a competitive study
+- Since we do not have a dataset yet to start parsing the parameters we need, I am exploring basic model examples.
+This will be as simple as trying to detect between cats and dogs and just learn the semantics of machine learning.
+- Until a clear project scope is defined by the sponsor, I will wait on writing test and validation plans for the end output of the model
