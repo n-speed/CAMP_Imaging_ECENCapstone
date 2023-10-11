@@ -4,13 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "*"
-torch = "*"
-torchvision = "*"
-torchaudio = "*"
-pandas = "*"
+ultralytics = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
