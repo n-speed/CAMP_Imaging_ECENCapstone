@@ -18,3 +18,10 @@ Hannah Smith (Multispectral Image Processing):
   - QGIS Planet plugin setup
   - Basic virtual environment setup
   - Started test index calculation
+
+Nathaniel Speed (Machine Learning)
+  - Running into issues with virtual environement setup
+  - Found a European dataset with 14-band data on various crop fields
+	- This dataset should be useful for establishing each model initially for training until Image Processing is ready
+  - Currently behind on writing initial LSTM python scripts for forecasting the vegetative indices
+  - Beginning tutorials on pulling planet API data for generating dataset in mean time while Hannah works on actual image processing
