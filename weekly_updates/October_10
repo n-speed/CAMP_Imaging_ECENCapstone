@@ -5,3 +5,16 @@ Seth Royder (UI and Database):
   - Website had some basic additions but not the amount I wanted by this point
   - Database is a little bit better, researching more about the database and getting ready to try to insert data.
   - Plan on reseraching how to import data from API into the datbabase.
+
+Hannah Smith (Multispectral Image Processing):
+  - Weekly update meeting with AgriLife team, Kevin, and Sambandh
+  - Finalized website funcitonality expectations
+  	- Added heat map display
+  - Updated FSR, ICD, execution and validation plans
+  - Began working with Jose to whittle down the list of features to extract
+  	- We now know the bands we have are RGB and NIR
+  - Granted access to Planet and got account error resolved
+  - Completed 97% of the Planet University tutorials relevant to the project (83% of the total)
+  - QGIS Planet plugin setup
+  - Basic virtual environment setup
+  - Started test index calculation
