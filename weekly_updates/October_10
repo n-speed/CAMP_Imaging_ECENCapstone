@@ -1,0 +1,27 @@
+October 10th Weekly Update:
+
+Seth Royder (UI and Database):
+  - Not much progress was made due to Fall Break
+  - Website had some basic additions but not the amount I wanted by this point
+  - Database is a little bit better, researching more about the database and getting ready to try to insert data.
+  - Plan on reseraching how to import data from API into the datbabase. (Tutortials from Planet University)
+
+Hannah Smith (Multispectral Image Processing):
+  - Weekly update meeting with AgriLife team, Kevin, and Sambandh
+  - Finalized website funcitonality expectations
+  	- Added heat map display
+  - Updated FSR, ICD, execution and validation plans
+  - Began working with Jose to whittle down the list of features to extract
+  	- We now know the bands we have are RGB and NIR
+  - Granted access to Planet and got account error resolved
+  - Completed 97% of the Planet University tutorials relevant to the project (83% of the total)
+  - QGIS Planet plugin setup
+  - Basic virtual environment setup
+  - Started test index calculation
+
+Nathaniel Speed (Machine Learning)
+  - Running into issues with virtual environement setup
+  - Found a European dataset with 14-band data on various crop fields
+	- This dataset should be useful for establishing each model initially for training until Image Processing is ready
+  - Currently behind on writing initial LSTM python scripts for forecasting the vegetative indices
+  - Beginning tutorials on pulling planet API data for generating dataset in mean time while Hannah works on actual image processing
