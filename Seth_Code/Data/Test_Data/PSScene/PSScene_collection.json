@@ -1,0 +1,350 @@
+{
+  "type": "Collection",
+  "id": "df0a8131-e248-410f-a743-fe338ff0c748: PSScene",
+  "stac_version": "1.0.0",
+  "description": "PSScene",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230620_165004_82_2488.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230625_161933_48_24a1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230714_161815_14_24c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230626_164255_97_225a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230628_161557_76_245c.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230712_161858_15_24d0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230517_161219_25_2430.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230625_171158_24_2402.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230624_170822_60_2414.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230509_161444_88_241b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230601_161859_42_24c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230611_164358_18_2276.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230618_161303_96_241d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230715_161329_87_241d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230413_161652_28_24c0.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230429_161730_30_24af.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230608_155424_41_2445.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230609_165120_27_2488.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230625_161935_85_24a1.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230610_161909_15_24c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230629_161606_60_2465.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230702_161907_81_2415.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230619_160949_27_2447.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230522_165252_41_2495.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230611_164356_34_2276.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230627_162040_09_24c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230621_165211_51_247b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230626_161537_31_24ab.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230426_164800_63_2483.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230621_161702_27_2415.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230629_170934_05_2414.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230611_161812_35_24bb.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230612_165348_87_2473.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230517_161217_16_2430.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230524_160909_07_2455.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230618_161839_01_24c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230626_164254_13_225a.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230509_161446_92_241b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230615_165052_76_248b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230715_161332_02_241d.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230426_160851_39_2459.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230427_161613_10_24bc.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230429_170648_54_2402.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230617_161136_19_2455.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230625_171200_27_2402.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230611_161810_00_24bb.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230626_161539_64_24ab.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230522_165254_62_2495.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230713_165502_91_2470.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230426_160853_58_2459.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230608_155422_15_2445.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230610_161911_45_24c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230721_165125_05_248b.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230518_161615_40_24c9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230416_170734_64_2405.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230430_164835_98_2446.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230629_161608_72_2465.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230618_161836_64_24c8.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230711_161842_10_24b9.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230429_161728_02_24af.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230609_165118_10_2488.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./20230615_161445_89_2431.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "pl:item_type": "PSScene",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -98.05801934646043,
+          27.413913790995327,
+          -97.29328725208664,
+          27.887450347279508
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-04-13T16:16:52.282593Z",
+          "2023-07-21T16:51:25.051364Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary"
+}

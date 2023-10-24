@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Button Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #258cd1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webpage button test</h1>
+    <p>Click the fun button below:</p>
+    
+    <!-- A pretty button -->
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // JavaScript code to handle button click
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+        function changeText() {
+            var paragraph = document.getElementById("demo");
+            paragraph.innerHTML = "Text changed!";
+        }
+    </script>
+</body>
+</html>
