@@ -1,7 +1,12 @@
 October 17th Weekly Update:
 
 Seth Royder (UI and Database):
+- Set up basic backend and database communication.
+- continued research into multithreading and mapped out a basic framework on paper.
+- Populated the database
+- Validated the database size requirements
 
 Hannah Smith (Multispectral Image Processing):
+
 
 Nathaniel Speed (Machine Learning)
