@@ -1,0 +1,6 @@
+src/Pipfile/
+src/Pipfile.lock
+
+# avoiding whatever the heck is in Seth's Code
+Seth_Code/Data/Test_Data
+Seth_Code/node_modules
