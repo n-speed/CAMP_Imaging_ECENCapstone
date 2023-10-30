@@ -1,3 +1,11 @@
 #
 Pipfile
 Pipfile.lock
+# data need not be public. Probably a better way to protect it
+tools/raw_data 
+
+#
+# Python Binaries
+#
+# Byte-compiled / optimized / DLL files
+*__pycache__
