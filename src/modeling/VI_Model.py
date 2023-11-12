@@ -1,33 +1,18 @@
 '''Standard Python Package Imports'''
 import lightning.pytorch as pl
 from lightning.pytorch.callbacks import EarlyStopping, LearningRateFinder
-from lightning.pytorch.tuner import Tuner
-from pytorch_forecasting import TimeSeriesDataSet, TemporalFusionTransformer
+from lightning.pytorch.loggers import TensorBoardLogger
 
-data = ...
+from pytorch_forecasting import Baseline, TemporalFusionTransformer, TimeSeriesDataSet
+from pytorch_forecasting.data import GroupNormalizer
+from pytorch_forecasting.metrics import MAE, SMAPE, PoissonLoss, QuantileLoss
+from pytorch_forecasting.models.temporal_fusion_transformer.tuning import optimize_hyperparameters
+
+from pytorch_forecasting.data.examples import get_stallion_data
 
 # defining the dataset
-max_encoder_length = 0
-max_prediction_length = 0
-training_cutoff = 'YYYY-MM-DD'
+data["time_idx"] = data["data"].dt.year * 12 + data["data"].dt.month
+data["time_idx"] -= data["time_idx"].min()
 
-training = TimeSeriesDataSet(
-    data[lambda x: x.date < training_cutoff],
-    time_idx = ...,
-    target = ...,
-    weight = "weight",
-    group_ids= [...],
-    max_encoder_length = max_encoder_length,
-    max_prediction_length= max_prediction_length,
-    static_categoricals= [...],
-    static_reals= [...],
-    time_varying_known_categoricals=[ ... ],
-    time_varying_known_reals=[ ... ],
-    time_varying_unknown_categoricals=[ ... ],
-    time_varying_unknown_reals=[ ... ],
-)
 
-validation = TimeSeriesDataSet.from_dataset(training,data, min_prediction_idx=training.index.time.max() + 1, stop_randomization=True)
-batch_size = 64
-train_dataloader = training.to_dataloader(train=True, batch_size=batch_size, num_workers=2)
-val_dataloader = validation.to_dataloader(train=False,batch_size=batch_size, num_workers=2)
+
