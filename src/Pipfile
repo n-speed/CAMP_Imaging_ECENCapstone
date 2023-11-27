@@ -8,6 +8,9 @@ ultralytics = "*"
 pytorch-forecasting = "*"
 pyarrow = "*"
 fastparquet = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 
