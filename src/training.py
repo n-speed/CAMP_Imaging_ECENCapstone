@@ -20,7 +20,7 @@ device = TSM.device
 model = TSM.LSTMModel(input_size,hidden_size, num_layers).to(device)
 
 loss_fn = torch.nn.MSELoss(reduction = 'mean')
-optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-4)
+optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-3)
 print(model)
 
 
