@@ -1,6 +1,6 @@
 import pandas as pd
 
-def data_import():
+def importing():
     '''Imports the data as a dataframe and then tranposes it
     
     NOTE: This is currently separate as it will later take in "n" number of .csv files'''

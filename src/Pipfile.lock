@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6e4c9a8b984d6f4665688db5e2bfd83b6e0ea5f7b8e6c5988391ef84944a7226"
+            "sha256": "237016705512a1e435a0d4f917dabf9f90eb695ad1351c0378e2dcacccdd4e73"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1055,6 +1055,14 @@
             "index": "pypi",
             "version": "==1.26.2"
         },
+        "nvsmi": {
+            "hashes": [
+                "sha256:718894c24bdf7b58b8ecdfd282dceb06ef120a4b4e0b8517193cba876174945e",
+                "sha256:c1a391c7c4dadc6ec572909ff0372451d464ebadc144e5aa5fbbcc893dcb7bfa"
+            ],
+            "index": "pypi",
+            "version": "==0.4.2"
+        },
         "opencv-python": {
             "hashes": [
                 "sha256:91d5f6f5209dc2635d496f6b8ca6573ecdad051a09e6b5de4c399b8e673c60da",
@@ -1409,7 +1417,7 @@
                 "sha256:1683f305265c9428b486365fc1286d792e6cacac97eb10395a725d460d441152",
                 "sha256:81bd70988b564853f8a0e5ec3f787e385b727d205782a95d209145939dddec79"
             ],
-            "markers": "python_full_version >= '3.7.2' and python_full_version < '4.0.0'",
+            "markers": "python_version < '4.0' and python_full_version >= '3.7.2'",
             "version": "==2.12.0"
         },
         "pytz": {

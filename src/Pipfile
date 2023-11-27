@@ -12,6 +12,7 @@ numpy = "*"
 pandas = "*"
 matplotlib = "*"
 scikit-learn = "*"
+nvsmi = "*"
 
 [dev-packages]
 
