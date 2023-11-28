@@ -7,23 +7,20 @@ import modeling.LSTM as TSM
 from modeling.sequence import train_sequence, test_sequence
 from tools.data_import import importing
 from tools.formatting import formatting
+import graphing
 
 ram_gb = virtual_memory().total / 1e9
 print('Runtime has {:.1f} gigabytes of available RAM \n'.format(ram_gb))
 
-input_size = 1
-num_layers = 1
+input_size = 20
+num_layers = 5
 hidden_size = 10
 output_size = 1
 
 device = TSM.device
-
 model = TSM.LSTMModel(input_size,hidden_size, num_layers).to(device)
-torch.cuda.current_device()
-
 loss_fn = torch.nn.MSELoss(reduction = 'mean')
-optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-2)
-print(model)
+optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-3)
 
 
 raw_data = importing()
@@ -31,10 +28,10 @@ train, test = formatting(raw_data,0.75)
 x_train, y_train = train_sequence(train)
 x_test, y_test = test_sequence(test)
 
-batch_size = 8
+batch_size = 16
 # Create DataLoader for batch training
 train_dataset = torch.utils.data.TensorDataset(x_train, y_train)
-train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 
 # Create DataLoader for batch training
 test_dataset = torch.utils.data.TensorDataset(x_test, y_test)
@@ -81,3 +78,5 @@ for epoch in range(num_epochs):
 		test_hist.append(average_test_loss)
 	if (epoch+1)%5==0:
 		print(f'Epoch [{epoch+1}/{num_epochs}] - Training Loss: {average_loss:.4f}, Test Loss: {average_test_loss:.4f}')
+
+graphing.graphLoss(num_epochs,train_hist,test_hist)
