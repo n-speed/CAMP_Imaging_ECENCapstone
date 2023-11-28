@@ -1,30 +1,32 @@
 from psutil import virtual_memory
 from nvsmi import get_available_gpus, get_gpus
+
 import torch
 
 import modeling.LSTM as TSM
-import tools.data_import as data_import
-from tools.formatting import formatting
 from modeling.sequence import train_sequence, test_sequence
+from tools.data_import import importing
+from tools.formatting import formatting
 
-ram_gb = virtual_memory().total/ 1e9
+ram_gb = virtual_memory().total / 1e9
 print('Runtime has {:.1f} gigabytes of available RAM \n'.format(ram_gb))
 
-input_size = 3718
-num_layers = 4
-hidden_size = 32
+input_size = 1
+num_layers = 1
+hidden_size = 10
 output_size = 1
 
 device = TSM.device
 
 model = TSM.LSTMModel(input_size,hidden_size, num_layers).to(device)
+torch.cuda.current_device()
 
 loss_fn = torch.nn.MSELoss(reduction = 'mean')
-optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-3)
+optimzier_obj = torch.optim.Adam(model.parameters(), lr = 1e-2)
 print(model)
 
 
-raw_data = data_import.importing()
+raw_data = importing()
 train, test = formatting(raw_data,0.75)
 x_train, y_train = train_sequence(train)
 x_test, y_test = test_sequence(test)
@@ -32,13 +34,13 @@ x_test, y_test = test_sequence(test)
 batch_size = 8
 # Create DataLoader for batch training
 train_dataset = torch.utils.data.TensorDataset(x_train, y_train)
-train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
 
 # Create DataLoader for batch training
 test_dataset = torch.utils.data.TensorDataset(x_test, y_test)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
-num_epochs = 800
+num_epochs = 100
 train_hist =[]
 test_hist =[]
 # Training loop
@@ -77,5 +79,5 @@ for epoch in range(num_epochs):
 		# Calculate average test loss and accuracy
 		average_test_loss = total_test_loss / len(test_loader)
 		test_hist.append(average_test_loss)
-	if (epoch+1)%6==0:
+	if (epoch+1)%5==0:
 		print(f'Epoch [{epoch+1}/{num_epochs}] - Training Loss: {average_loss:.4f}, Test Loss: {average_test_loss:.4f}')

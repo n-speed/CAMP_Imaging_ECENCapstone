@@ -3,7 +3,7 @@ import torch
 
 def train_sequence(train_data):
     temp_ary = train_data[0]
-    seq_length = 2 # looking at previous week's projection
+    seq_length = 1 # looking at previous week's projection
     x_train, y_train = [] , [] # training just the cc data for now
     print(len(temp_ary))
     for i in range(len(temp_ary)-seq_length):
@@ -13,7 +13,8 @@ def train_sequence(train_data):
     
     x_train = torch.tensor(x_train, dtype = torch.float32)
     y_train = torch.tensor(y_train, dtype = torch.float32)
-    
+    print(x_train.shape,y_train.shape)
+
     return x_train, y_train
     # return print(x_train.shape,y_train.shape)
 
@@ -29,6 +30,7 @@ def test_sequence(test_data):
 
     x_test = torch.tensor(x_test, dtype = torch.float32)
     y_test = torch.tensor(y_test, dtype = torch.float32)
+    print(x_test.shape,y_test.shape)
 
     return x_test, y_test
 
